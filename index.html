@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet">
+</head>
+<body>
+  
+
+  
+  
+        <div class="container">
+      <h1 class ="c"> Receiver Registration Form</h1>   
+      
+      <div class="row">
+            <form class="col s12" id="reg-form">
+              <div class="row">
+                
+                
+                
+                <div class="input-field col s6">
+                  
+                  <label for="Age" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Name      </label><br>
+                  <input id="Name" type="text" class="ab" class="validate" required placeholder=" eg 21"> 
+                                  </div>
+
+
+
+                <div class="input-field col s6">
+                  <label for="Age" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Age      </label><br>
+                  <input id="Age" type="text" class="b" class="validate" required placeholder="eg 21"> 
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="bloodgroup" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Bloodgroup       </label><br>
+                  <input id="bloodgroup"  type="text" class="validate" required placeholder="eg A+">
+                  
+                </div>
+            </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="email" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Email       </label><br>
+                  <input id="email" type="email" class="c" class="validate" required placeholder="eg xys@gmail.com">
+                  
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <label for="Mobile" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Mobile      </label><br>
+                    <input id="Mobile"  type="text"  class="validate" required placeholder="">
+                    
+                  </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="address" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Address</label><br>
+                  <Textarea name="address" id="a"  ></Textarea>
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <div class="gender-male">
+                    <input class="with-gap" name="gender" type="radio" id="male"   required />
+                    <label for="male">Male</label>
+                  </div>
+                  <div class="gender-female">
+                    <input class="with-gap" name="gender" type="radio" id="female" required />
+                    <label for="female" style="" >Female</label>
+                  </div>
+                </div>
+        
+                <div class="input-field col s6">
+                  <button id="b" class="btn btn-large btn-register waves-effect waves-light" type="submit" name="action" style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Submit
+                    <i style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="material-icons right"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <br>
+         
+          <a title="Login" class="ngl btn-floating btn-large waves-effect waves-light red"><i class="material-icons"></i></a>
+          
+
+
+
+          
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+          <script>
+            $(document).ready(function(){
+                $(".dropdown-trigger").dropdown();
+                M.updateTextFields();
+                $('select').formSelect();
+                $('.datepicker').datepicker();
+        
+            });
+          </script>
+
+
+
+
+</body>
+</html> 
